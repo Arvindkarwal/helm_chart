@@ -6,10 +6,6 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/ssl-redirect: "true"  # Force HTTPS redirection
 spec:
-  tls:
-    - hosts:
-        - {{ .Values.ingress.host }}
-      secretName: {{ .Values.ingress.tlsSecretName }}  # TLS certificate secret
   rules:
     - host: {{ .Values.ingress.host }}
       http:
