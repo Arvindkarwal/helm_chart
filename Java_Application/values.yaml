@@ -18,7 +18,7 @@ service:
   name: java-svc
   port: 80
   targetPort: 9098
-  type: ClusterIP
+  type: NodePort
 
 # Ingress configuration
 ingress:
