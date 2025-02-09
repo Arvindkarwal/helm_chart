@@ -19,7 +19,7 @@ service:
   name: java-svc
   port: 80
   targetPort: 9098
-  type: LoadBalancer
+  type: ClusterIP
 
 # Ingress configuration
 ingress:
