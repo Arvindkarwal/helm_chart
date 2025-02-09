@@ -19,7 +19,7 @@ service:
   name: java-svc
   port: 80
   targetPort: 9098
-  type: NodePort
+  type: LoadBalancer
 
 # Ingress configuration
 ingress:
